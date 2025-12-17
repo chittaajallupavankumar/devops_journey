@@ -1,0 +1,21 @@
+name: Basic CI Workflow
+
+on: [push]  # Trigger on every push
+
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions! Pavan's Day 4 CI/CD practice."
+
+      - name: List files
+        run: ls -la
+
+      - name: Run simple script
+        run: |
+          echo "CI/CD pipeline running on $(date)"
+          python --version  # If Python installed in runner
