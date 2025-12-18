@@ -1,5 +1,7 @@
 # 1. Print current working directory
-`pwd`
+```sh
+pwd
+```
 
 # 2. List processes by memory
 `ps aux --sort=-%mem | head`
