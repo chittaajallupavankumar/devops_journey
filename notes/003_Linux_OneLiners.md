@@ -1,10 +1,12 @@
 # 1. Print current working directory
-```sh
+```sh  
 pwd
 ```
 
 # 2. List processes by memory
-`ps aux --sort=-%mem | head`
+```sh
+ps aux --sort=-%mem | head
+```
 
 # 3. Find zombie processes
 `ps aux | awk ' ~ /Z/'`
